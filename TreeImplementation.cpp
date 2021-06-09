@@ -54,7 +54,7 @@ struct node *deleteitem(struct node *tree, int val){
             tree = tree->right;
             delete temp;
         }else if(tree->right == NULL){
-            struct node *temp = NULL;
+            struct node *temp = tree;
             tree = tree->left;
             delete temp; 
         }
